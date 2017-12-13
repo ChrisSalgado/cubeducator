@@ -1,65 +1,181 @@
-*{
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    overflow: hidden;
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+* {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing: 1.5px;
+}
+.section__titulo {
+  text-align: center;
+  font-size: 40px;
+  color: #FBA919;
+}
+.contenedor {
+  margin: auto;
+  width: 99%;
+}
+/*-------------------Estilos del header-------------------*/
+.header {
+  height: 57px;
+  background: #1e3030;
+}
+.header .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+.logo, .icon-menu {
+  margin: 5px;
+  color: #fff;
+}
+.icon-menu {
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  background: #1e3030;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 5px;
+  margin-left: auto;
+  cursor: pointer;
+}
+/*------------------Estilos del menu------------------*/
+.nav {
+  position: absolute;
+  top: 60px;
+  left: -100%;
+  width: 100%;
+  transition: all 0.4s;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu__link {
+  display: block;
+  padding: 15px;
+  background: #1e3030;
+  text-decoration: none;
+  color: #fff;
+}
+.menu__link:hover, .select {
+  background: #0c94e8;
+  color: white;
+}
+.mostrar {
+  left: 0;
 }
 
-header{
-    width: 100%;
-    background: #1e3030;
-    padding: 20px;
-    
+
+@media(min-width:480px) {
+  .logo {
+    font-size: 40px;
+  }
+  .banner__titulo {
+    font-size: 30px;
+    margin: 5px 0;
+  }
+  .banner__txt {
+    display: block;
+    font-size: 18px;
+    margin: 7px 0;
+  }
+  .info, .cursos {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-}
-
-header .logo{
-    width:20%;
-}
-
-.imagen_logo{
-    width:100%;
-    vertical-align:top;
-}
-
-.btn-menu{
-    display: none;
-}
-
-header .nave{
-    width: 50%;
-    
-    display: flex;
-    flex-direction: row;
+    margin-top: -90px;
+  }
+  .info__columna {
+    width: 32%;
+  }
+  .info__titulo {
+    font-size: 30px;
+    margin: 5px 0;
+  }
+  .section__titulo {
+    width: 100%;
+  }
+  .cursos {
     flex-wrap: wrap;
-    align-items: center;
-    
+    margin-top: 0;
+  }
+  .cursos__columna {
+    width: 49%;
+  }
+  .footer .social [class^="icon-"] {
+    margin: 0 10px;
+  }
+}
+@media(min-width:768px) {  
+  .banner__titulo {
+    font-size: 50px;
+  }
+  .cursos__titulo {
+    font-size: 40px;
+  }
 }
 
-header .nave .menu-link{
-    padding:20px;
-    text-decoration: none;
+@media(min-width:1024px) {  
+  .contenedor {
+    width: 1000px;
+  }
+  .section__titulo {
+    font-size: 50px;
+    margin: 30px 0;
+  }
+  .nav {
+    position: static;
+    width: auto;
+  }
+  .menu {
+    display: flex;
+  }
+  .icon-menu {
+    display: none;
+  }
+  .menu__link {
+    background: none;
+    font-size: 20px;
+  }
+  .select {
     color: #fff;
-    font-family: sans-serif;
-    flex-grow: 1;
-    text-align: center;
-}
-
-
-header .nave .menu-link:hover{
     background: #0c94e8;
-    color: #fff;
+  
 }
 
-/*-------------------------------- responsive design -----------------------*/
-
-
-@media screen (max-width:760px){
-    
+@media(min-width:1280px) {
+  .contenedor {
+    width: 1300px;
+  }
+  .logo {
+    font-size: 60px;
+  }
+  .banner .contenedor {
+    top: 40%;
+  }
+  .info {
+    margin-top: -220px;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
