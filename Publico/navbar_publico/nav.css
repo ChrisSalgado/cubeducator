@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 /*------------------Estilos del menu------------------*/
 .nav {
   position: absolute;
-  top: 60px;
+  top: 57px;
   left: -100%;
   width: 100%;
   transition: all 0.4s;
@@ -82,58 +82,15 @@ h1, h2, h3, h4, h5, h6 {
   .logo {
     font-size: 40px;
   }
-  .banner__titulo {
-    font-size: 30px;
-    margin: 5px 0;
-  }
-  .banner__txt {
-    display: block;
-    font-size: 18px;
-    margin: 7px 0;
-  }
-  .info, .cursos {
-    display: flex;
-    justify-content: space-between;
-    margin-top: -90px;
-  }
-  .info__columna {
-    width: 32%;
-  }
-  .info__titulo {
-    font-size: 30px;
-    margin: 5px 0;
-  }
-  .section__titulo {
-    width: 100%;
-  }
-  .cursos {
-    flex-wrap: wrap;
-    margin-top: 0;
-  }
-  .cursos__columna {
-    width: 49%;
-  }
-  .footer .social [class^="icon-"] {
-    margin: 0 10px;
-  }
+  
 }
-@media(min-width:768px) {  
-  .banner__titulo {
-    font-size: 50px;
-  }
-  .cursos__titulo {
-    font-size: 40px;
-  }
-}
+
 
 @media(min-width:1024px) {  
   .contenedor {
     width: 1000px;
   }
-  .section__titulo {
-    font-size: 50px;
-    margin: 30px 0;
-  }
+  
   .nav {
     position: static;
     width: auto;
