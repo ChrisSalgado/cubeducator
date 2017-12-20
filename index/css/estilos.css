@@ -77,6 +77,25 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
 }
 
+/* Estilos Contactos */
+.Contacto{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 5px 5px;
+    height: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.Contacto .frm_contacto h1{
+    text-align: center;
+    color: white;
+}
+
+.Contacto .frm_contacto .input_text{
+    width: 100%;
+    
+}
 /* Estilos del footer */
 
 li{
