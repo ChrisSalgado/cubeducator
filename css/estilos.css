@@ -242,7 +242,6 @@ footer .footer .redes a{
         background: white;
         display: flex;
         flex-direction: column;
-        flex-wrap;
     }
     .superior{
         width: 100%;
@@ -283,6 +282,44 @@ footer .footer .redes a{
 
     .contenido_secciones{
         margin: 1px;
+    }
+    
+    /*Responsive del main*/
+@media (min-width:780px) {
+        .seccion_main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .superior{
+            display: flex;
+            flex-direction: column;
+            padding: 1em;
+        }
+        
+        .imagen_secciones{
+            display: block;
+            width:200px;
+        }
+    }
+    
+    @media (min-width:360px) {
+        .seccion_main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .superior{
+            display: flex;
+            flex-direction: column;
+            padding: 1em;
+        }
+        
+        .imagen_secciones{
+            width:150px;
+        }
     }
     
     /*Seccion de funciones*/
