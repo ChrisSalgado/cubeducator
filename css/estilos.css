@@ -341,15 +341,14 @@ footer .footer .redes a{
         background: white;
         display: flex;
         flex-direction: column;
-        flex-wrap;
     }
+    
     .superior{
         width: 100%;
         padding: 1em;
         display:flex;
         flex-direction: row;
         justify-content: space-around;
-        overflow:hidden;
     }
     .inferior{
         width: 100%;
@@ -357,7 +356,6 @@ footer .footer .redes a{
         display:flex;
         flex-direction: row;  
         justify-content: space-around;
-        overflow:hidden;
     }
     
     .secciones{
@@ -383,6 +381,55 @@ footer .footer .redes a{
     .contenido_secciones{
         margin: 1px;
     }
+    
+        /*Responsive del main*/
+@media screen and (max-width: 360px) {
+         .seccion_main{
+            width: 100%;
+            background: white;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .superior{
+            width: 100%;
+            padding: 1em;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        .inferior{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 1em;
+        }
+        
+        .imagen_secciones{
+            width:200px;
+        }
+    }
+    
+@media screen and (max-width: 760px) {
+        .seccion_main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .superior{
+            display: flex;
+            flex-direction: column;
+            padding: 1em;
+        }
+        
+        .imagen_secciones{
+            width:150px;
+        }
+    }
+    
+
     
     /*Seccion de funciones*/
     
