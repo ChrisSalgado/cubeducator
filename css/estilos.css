@@ -1,9 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 @import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@import url(responsive.css);
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 img {
   display: block;
@@ -80,24 +81,109 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Estilos Contactos */
-.Contacto{
-    width: 40%;
-    margin: 0 auto;
-    margin-top: 50px;
-    padding: 5px 5px;
-    height: auto;
-    background-color: rgba(0,0,0,0.5);
+
+.contacto{
+    width: 1050px;
+    height: 530px;
+    margin: 50px auto;
+    display: flex;
 }
 
-.Contacto .frm_contacto h1{
+.contacto .contact_info{
+    margin-top: -80px;
+    width: 38%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto .contact_info .info span{
+    font-size: 90px;
+    display: block;
+    margin: 5px;
     text-align: center;
-    color: white;
-}
-
-.Contacto .frm_contacto .input_text{
-    width: 100%;
+    color: #0c94e8;
     
 }
+
+.contacto .contact_info .info h2{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    margin: 5px 5px;
+}
+
+.contacto .contact_info .info h4{
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    color: #1e3030;
+    margin: 5px 5px;
+}
+
+.contacto .contact_info .mail span{
+    margin-top: 10px;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+
+
+.frm_contacto{
+    width: 62%;
+}
+
+.frm_contacto .user_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 75px;
+}
+
+.frm_contacto .user_info input, .frm_contacto .user_info textarea{
+    width: 100%;
+    padding: 8px 0px 5px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #1e3030;
+    color: #1e3030;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.frm_contacto .user_info textarea{
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 100px;
+}
+
+.frm_contacto .user_info input[type="button"]{
+    width: 180px;
+    background: #0c94e8;
+    padding: 10px;
+    border: none;
+    align-self: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.frm_contacto .user_info input[type="button"]:hover{
+    background: #17c1c9;
+}
+
+:focus{
+    outline: none;
+}
+
+
+
+
 /* Estilos del footer */
 
 li{
@@ -155,6 +241,7 @@ footer .footer .redes a{
 }
 
 
+
 @media(min-width:480px) {
   .logo {
     font-size: 40px;
@@ -165,7 +252,7 @@ footer .footer .redes a{
 
 @media(min-width:1024px) {  
   .contenedor {
-    width: 1000px;
+    width: 100%;
   }
   
   .nav {
@@ -190,17 +277,28 @@ footer .footer .redes a{
 
 @media(min-width:1280px) {
   .contenedor {
-    width: 1300px;
+    width: 100%;
   }
-  .logo {
-    font-size: 60px;
+  
+  .nav {
+    position: static;
+    width: auto;
   }
-  .banner .contenedor {
-    top: 40%;
+  .menu {
+    display: flex;
   }
-  .info {
-    margin-top: -220px;
+  .icon-menu {
+    display: none;
   }
+  .menu__link {
+    background: none;
+    font-size: 20px;
+  }
+  .select {
+    color: #fff;
+    background: #0c94e8;
+  
+}
 }
 
     /*-----------------------------Aqui esta el wallpaper------- */
@@ -230,11 +328,11 @@ footer .footer .redes a{
 }
     
     .banner__titulo{
-        font-size: 6em;
+        font-size: 4em;
     }
     
     .banner__txt{
-        font-size: 2em;
+        font-size: 1em;
     }
 
 /*-----------------seccion del main-------------------*/
@@ -278,60 +376,13 @@ footer .footer .redes a{
     }
     
     .imagen_secciones{
-        width:35%;
+        width:100px;
     }
 
     .contenido_secciones{
         margin: 1px;
     }
-    
-        /*Responsive del main*/
-@media screen and (max-width: 360px) {
-         .seccion_main{
-            width: 100%;
-            background: white;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .superior{
-            width: 100%;
-            padding: 1em;
-            display:flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-    
-        .inferior{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            padding: 1em;
-        }
-        
-        .imagen_secciones{
-            width:200px;
-        }
-    }
-    
-@media screen and (max-width: 760px) {
-        .seccion_main{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        
-        .superior{
-            display: flex;
-            flex-direction: column;
-            padding: 1em;
-        }
-        
-        .imagen_secciones{
-            width:150px;
-        }
-    }
-    
+
 
     
     /*Seccion de funciones*/
@@ -382,3 +433,4 @@ footer .footer .redes a{
     
     
 
+    

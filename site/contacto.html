@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Contacto</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/fonts.css">
 </head>
 <body>
     <header class="header">
       <div class="contenedor">
-        <h1 class="logo"><img src="img/Logo%202.png" style="width: 250px" alt=""></h1>
-        <span class="icon-menu" id="btn-menu"> <i class="fa fa-bars" aria-hidden="true"></i></span>
+        <h1 class="logo"><img src="../img/Logo%202.png" style="width: 250px" alt=""></h1>
+        <span class="icon-menu" id="btn-menu"><i class="fa fa-bars" aria-hidden="true"></i></span>
         
         <nav class="nav" id="nav">
           <ul class="menu">
@@ -26,16 +26,33 @@
         </nav>
       </div>
     </header>
-    <div class="Contacto">
-       <form class="frm_contacto">
-            <h1>Contacto</h1>
-            <h3>Nombre</h3>
-            <input class="input_text" type="text" placeholder="Nombre" required>
-            <h3>Correo</h3>
-            <input class="input_text" type="text" placeholder="Correo" required>
-            <h3>Mensaje</h3>
-            <input class="input_text" type="text" placeholder="Mensaje" required>
-       </form>
-    </div>
+    <section class="contacto">
+        <section class="contact_info">
+           <section class="info">
+               <span class="fa fa-user-circle"></span>
+               <h2>INFORMACIÓN<br>DE CONTACTO</h2>
+               <h4>Envíanos tus dudas y sugerencias<br>a nuestro correo electrónico</h4>
+           </section>
+           <section class="mail">
+               <p>
+               <span class="fa fa-envelope-o"></span>cubeducator.gmail.com</p>
+           </section>
+        </section>
+           
+           <form action="" class="frm_contacto">
+               <div class="user_info">
+                   <h2>Enviar mensaje:</h2>
+               <br>
+               <label for="names"> Nombre *</label>
+               <input type="text" id="names">
+               <label for="correo"> Correo *</label>
+               <input type="text" id="correo"><label for="mensaje"> Mensaje *</label>
+               <textarea id="mensaje" ></textarea>
+               
+               <input type="button" value="Enviar Mensaje" id="btn_enviar">
+           </div>
+           </form>
+    </section>
+
 </body>
 </html>
