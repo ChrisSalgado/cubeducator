@@ -120,6 +120,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 25px;
     color: #1e3030;
     margin: 5px 5px;
+<<<<<<< HEAD
 }
 
 .contacto .contact_info .mail span{
@@ -128,6 +129,16 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 20px;
 }
 
+=======
+}
+
+.contacto .contact_info .mail span{
+    margin-top: 10px;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+>>>>>>> cebaf93cc6b20a5cdf58768b18e82d5bb7a8620a
 
 
 .frm_contacto{
@@ -283,6 +294,7 @@ footer .footer .redes a{
   .nav {
     position: static;
     width: auto;
+<<<<<<< HEAD
   }
   .menu {
     display: flex;
@@ -294,6 +306,19 @@ footer .footer .redes a{
     background: none;
     font-size: 20px;
   }
+=======
+  }
+  .menu {
+    display: flex;
+  }
+  .icon-menu {
+    display: none;
+  }
+  .menu__link {
+    background: none;
+    font-size: 20px;
+  }
+>>>>>>> cebaf93cc6b20a5cdf58768b18e82d5bb7a8620a
   .select {
     color: #fff;
     background: #0c94e8;
