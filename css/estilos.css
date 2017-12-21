@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 @import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@import url(responsive.css);
 * {
     margin: 0;
     padding: 0;
@@ -127,6 +128,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 20px;
 }
 
+}
+
+.contacto .contact_info .mail span{
+    margin-top: 10px;
+    margin-right: 5px;
+    font-size: 20px;
+}
 
 
 .frm_contacto{
@@ -282,6 +290,18 @@ footer .footer .redes a{
   .nav {
     position: static;
     width: auto;
+<<<<<<< HEAD
+  }
+  .menu {
+    display: flex;
+  }
+  .icon-menu {
+    display: none;
+  }
+  .menu__link {
+    background: none;
+    font-size: 20px;
+  }
   }
   .menu {
     display: flex;
@@ -327,11 +347,11 @@ footer .footer .redes a{
 }
     
     .banner__titulo{
-        font-size: 6em;
+        font-size: 4em;
     }
     
     .banner__txt{
-        font-size: 2em;
+        font-size: 1em;
     }
 
 /*-----------------seccion del main-------------------*/
@@ -375,60 +395,13 @@ footer .footer .redes a{
     }
     
     .imagen_secciones{
-        width:35%;
+        width:100px;
     }
 
     .contenido_secciones{
         margin: 1px;
     }
-    
-        /*Responsive del main*/
-@media screen and (max-width: 360px) {
-         .seccion_main{
-            width: 100%;
-            background: white;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .superior{
-            width: 100%;
-            padding: 1em;
-            display:flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-    
-        .inferior{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            padding: 1em;
-        }
-        
-        .imagen_secciones{
-            width:200px;
-        }
-    }
-    
-@media screen and (max-width: 760px) {
-        .seccion_main{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        
-        .superior{
-            display: flex;
-            flex-direction: column;
-            padding: 1em;
-        }
-        
-        .imagen_secciones{
-            width:150px;
-        }
-    }
-    
+
 
     
     /*Seccion de funciones*/
@@ -479,3 +452,4 @@ footer .footer .redes a{
     
     
 
+    
