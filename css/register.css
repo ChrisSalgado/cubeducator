@@ -1,0 +1,16 @@
+#register_display{
+  width: 100%;
+  background-color: black;
+  height: 100vh;
+  z-index: 1000;
+  top: 0;
+  left:0;
+  position :fixed;
+  display: none;
+}
+#register_form{
+  width: 50%;
+  margin: 0 auto;
+  background-color: white;
+  z-index: 1001;
+}
