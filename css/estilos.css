@@ -329,77 +329,6 @@ footer .footer .redes a{
 }
 
 
-
-@media(min-width:480px) {
-  .logo {
-    font-size: 40px;
-  }
-  
-}
-
-
-@media(min-width:1024px) {  
-  .contenedor {
-    width: 100%;
-  }
-  
-  .nav {
-    position: static;
-    width: auto;
-  }
-  .menu {
-    display: flex;
-  }
-  .icon-menu {
-    display: none;
-  }
-  .menu__link {
-    background: none;
-    font-size: 20px;
-  }
-  .select {
-    color: #fff;
-    background: #0c94e8;
-  
-}
-
-@media(min-width:1280px) {
-  .contenedor {
-    width: 100%;
-  }
-  
-  .nav {
-    position: static;
-    width: auto;
-  }
-  .menu {
-    display: flex;
-  }
-  .icon-menu {
-    display: none;
-  }
-  .menu__link {
-    background: none;
-    font-size: 20px;
-  }
-  }
-  .menu {
-    display: flex;
-  }
-  .icon-menu {
-    display: none;
-  }
-  .menu__link {
-    background: none;
-    font-size: 20px;
-  }
-  .select {
-    color: #fff;
-    background: #0c94e8;
-  
-}
-}
-
     /*-----------------------------Aqui esta el wallpaper------- */
     
     .banner{
@@ -417,6 +346,7 @@ footer .footer .redes a{
     left: 65%;
     top: 30%;
     border: 1px solid #000;
+    background: rgba(0,0,0,0.6);
     z-index: 1000;
     display: flex;
     flex-direction: column;
@@ -440,21 +370,24 @@ footer .footer .redes a{
     width: 100%;
     margin-bottom: 1em;
     padding: 10px;
-    font-size: 10px;
+    font-size: 15px;
     font-family: 'Open Sans', sans-serif;
 }
 
 .submit-login{
-    display: inline;
-    width: 50%;
-    padding: 1em;
+    display: inline-block;
+    width: 55%;
+    padding: 10px 15px;
     background: #17c1c9;
     border: 0;
     display: flex;
-    font-size: 15px;
+    font-size: 25px;
     font-family: 'Open Sans', sans-serif;
     color: white;
     text-align: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 5px;
     
 }
 
@@ -492,6 +425,8 @@ footer .footer .redes a{
         background: rgba(23, 193, 201, .8);
         display: flex;
         flex-direction: column;
+        top: 0px;
+        left: 0;
     }
     
     .superior{
@@ -581,73 +516,3 @@ footer .footer .redes a{
         margin: 20px;
     }
 
-/*---------------------LOGIN---------------------------*/
-
-.contenedor-1{
-    width:700px;
-    background: rgba(1,1,1,.8);
-    padding: 20px;
-    position: relative;
-    color: white;
-    top:95px;
-    border-radius: 5px;
-    
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: auto;
-    align-items: center;
-    align-content: center;
-}
-
-h2{
-    margin-left: 20px;
-}
-
-form{
-    margin: 5px;
-    padding: 5px;
-}
-
-
- .texto{
-     width: 250px;
-     padding: 10px;
-     font-family: sans-serif;
-     font-size: 17px;
-     border-radius: 5px;
-     margin: 15px 0px;
-     margin-left:10px;
-}
-
-.botoncito{
-    width: 90px;
-    background: #741111;
-    border: 0;
-    color: white;
-    padding: 10px;
-    margin-left: 10px;
-}
-
-.imagen{
-    padding: 20px;
-    border-left: 1px solid #fff;
-}
-
-.abajo{
-    width: 500px;
-    color: white;
-    font-family: Open Sans, sans-serif;
-    font-size: 12px;
-    top:110px;
-    position: relative;
-    margin: auto;
-}
-
-h3 a{
-    text-decoration: none;
-    color: #0094ff;
-}
-
-    
