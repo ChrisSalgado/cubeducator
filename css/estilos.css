@@ -346,7 +346,7 @@ footer .footer .redes a{
     left: 65%;
     top: 30%;
     border: 1px solid #000;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.7);
     z-index: 1000;
     display: flex;
     flex-direction: column;
@@ -375,20 +375,33 @@ footer .footer .redes a{
 }
 
 .submit-login{
-    display: inline-block;
-    width: 55%;
-    padding: 10px 15px;
-    background: #17c1c9;
+    width: 200px;
+    padding: 15px 10px;
+    background: #0c94e8;
     border: 0;
-    display: flex;
-    font-size: 25px;
-    font-family: 'Open Sans', sans-serif;
     color: white;
-    text-align: center;
-    align-items: center;
-    align-content: center;
+    font-family:'Open Sans', sans-serif;
+    font-size: 20px;
+    
+    display: inline-block;
     border-radius: 5px;
     
+}
+
+
+.registro{
+    width: 200px;
+    padding: 15px 10px;
+    background: #0c94e8;
+    border: 0;
+    color: white;
+    font-family:'Open Sans', sans-serif;
+    font-size: 1em;
+    position: absolute;
+    display: inline-block;
+    left: 40%;
+    top: 70%;
+    border-radius: 5px;
 }
 
 
