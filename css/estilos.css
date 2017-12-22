@@ -13,6 +13,7 @@ img {
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
+  min-width: 400px;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -400,7 +401,22 @@ footer .footer .redes a{
     position: absolute;
     display: inline-block;
     left: 40%;
-    top: 70%;
+    top: 65%;
+    border-radius: 5px;
+}
+
+.Login{
+    width: 200px;
+    padding: 15px 10px;
+    background: #2ce02f;
+    border: 0;
+    color: white;
+    font-family:'Open Sans', sans-serif;
+    font-size: 1em;
+    position: absolute;
+    display: inline-block;
+    left: 40%;
+    top: 65%;
     border-radius: 5px;
 }
 
@@ -528,4 +544,89 @@ footer .footer .redes a{
         font-size: 70px;
         margin: 20px;
     }
+
+@media (max-width:1025px){
+    .banner__titulo{
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .banner__txt{
+        margin-left: 16%;
+    }
+    
+    .Login{
+        width:150px;
+        padding: 10px 15px;
+        left: 70%;
+        top: 80%;
+        font-size: 15px;
+    }
+    
+    .login{
+        display: none;
+    }
+    
+    .registro{
+        width:150px;
+        padding: 10px 15px;
+        left: 10%;
+        top: 80%;
+        font-size: 15px;
+    }
+}
+
+
+
+
+@media (max-width:600px){
+    .banner__titulo{
+        display: inline-block;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .banner__txt{
+        display: none;
+    }
+    
+    .contenedor{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .registro{
+        width:90px;
+        padding: 7px 5px;
+        left: 20%;
+        font-size: 15px;
+    }
+    
+    .Login{
+        width:100px;
+        padding: 7px 5px;
+        left: 60%;
+        font-size: 15px;
+    }
+    
+    .login{
+      display: none;
+      left: 10%;
+      top: 5%;
+      width: 300px;
+        
+    }
+    
+    .login-txt{
+        width: 150px;
+    }
+    
+    
+}
 
