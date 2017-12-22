@@ -56,7 +56,7 @@
             padding: 1em;
         }
         
-        .secciones{
+    .secciones{
            width: 100%;
             display: flex;
             flex-direction: row;
@@ -84,5 +84,76 @@
             width: 20%;
             margin: 0;
         }
-    }
+ }
     
+/*Responsive del Login*/
+@media screen and (max-width:800px) {
+    /*---------------Responsive del Login---------------*/
+      .contenedor-1{
+            width:80%;
+            background: rgba(1,1,1,.8);
+            padding: 20px;
+            position: relative;
+            color: white;
+            top:95px;
+            border-radius: 5px;
+            overflow: hidden;
+          
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+            align-items: center;
+            align-content: center;
+        }
+
+        h2{
+            margin-left: 20px;
+        }
+
+        form{
+            width: 100%;
+            padding: 0px;
+        }
+
+
+         .texto{
+             width: 90%;
+             padding: 10px;
+             font-family: sans-serif;
+             font-size: 17px;
+             border-radius: 5px;
+             margin: 15px 0px;
+        }
+
+        .botoncito{
+            width: 90px;
+            background: #741111;
+            border: 0;
+            color: white;
+            padding: 10px;
+            margin-left: 10px;
+        }
+
+        .imagen{
+            display: none;
+            overflow: hidden;
+        }
+
+        .abajo{
+            width: 80%;
+            color: white;
+            font-family: Open Sans, sans-serif;
+            font-size: 12px;
+            top:110px;
+            position: relative;
+            margin: auto;
+        }
+
+        h3 a{
+            text-decoration: none;
+            color: #0094ff;
+        }
+
+}
