@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 .MainMenu{
     height: 100vh;
     width: 300px;
-    background-color: #a6e0d4;
+    background-color: #1e3030;
     position: fixed;
     top:0;
     left: -100%;
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
     list-style: none;
     padding: 0px;
     margin: 0px;
-    color: #1e3030;
+    color: #fff;
     font-weight: 600;
     text-align: center;
     position: absolute;
@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .list a{
     text-decoration: none;
-    color: #1e3030; 
+    color: #fff; 
 }
 
 .list ul{
@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
 .line{
     height: 2px;
     width: 150px;
-    background-color: #1e3030;
+    background-color: #fff;
     margin-top: 10px;
     position: absolute;
     left: 50%;
@@ -136,7 +136,7 @@ ul li:hover .line{
 .social li a{
     display: block;
     font-size: 18px;
-    color: #1e3030;
+    color: #fff;
     width: 40px;
     height: 40px;
     text-align: center;
@@ -394,8 +394,58 @@ footer .footer .redes a{
         margin-top: -60px;
         position: relative;
         z-index: -1000;
-        margin-bottom: 20px;
+        margin-bottom: 1px;
+        display: flex;
+        flex-direction: row;
     }
+    
+.login{
+    width: 30%;
+    position: absolute;
+    left: 65%;
+    top: 30%;
+    border: 1px solid #000;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    color: white;
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em;
+    width: 100%;
+}
+
+.login-txt{
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 10px;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.submit-login{
+    display: inline;
+    width: 50%;
+    padding: 1em;
+    background: #17c1c9;
+    border: 0;
+    display: flex;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+    
+}
+
 
     .banner__img{
         width: 100%;
@@ -404,7 +454,7 @@ footer .footer .redes a{
 
     .banner .contenedor{
         position: absolute;
-        top: 50%;
+        top: 40%;
         left:50%;
         transform: translateX(-50%) translateY(-50%);
         width: 100%;
@@ -419,7 +469,8 @@ footer .footer .redes a{
     }
     
     .banner__txt{
-        font-size: 1em;
+        font-size: 2em;
+        margin-left: 1em;
     }
 
 /*-----------------seccion del main-------------------*/
@@ -586,8 +637,5 @@ h3 a{
     text-decoration: none;
     color: #0094ff;
 }
-
-    
-    
 
     

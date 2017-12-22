@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
-  
+  <!--Menu-->
    <header>
        <div class="cont">
            <div class="bt-menu">
@@ -19,7 +19,7 @@
        </div>
        <div class="MainMenu">
            <div id="logo">
-               <img src="img/Logo.png">
+               <img src="img/Logo-final.png">
            </div>
            <ul class="list">
                <a href="index.html"><li>Inicio<div class="line"></div></li></a>
@@ -35,22 +35,22 @@
            </ul>
        </div>   
    </header>
-   
-    <div id="register_display">
-      <div id="register_form">
-        <button>Text generic</button>
-      </div>
-    </div>
-        <!-- Wallpaper -->
-
-        <div class="banner">
-            <img src="img/img1.jpg" alt="" class="banner__img">
+       <!--Banner-->
+        <div class="banner" id="main-wrap">
+            <img src="img/fondo-1.png" alt="" class="banner__img">
             <div class="contenedor">
                 <h2 class="banner__titulo">La mejor educación a tu alcance</h2>
                 <p class="banner__txt">estudia con nosotros y alcanza tus sueños</p>
             </div>
-
         </div>
+        <div class="login">
+                <p>Iniciar Sesión</p>
+                <form action="" class="form-login">
+                    <input type="text" class="login-txt">
+                    <input type="password" class="login-txt">
+                    <input type="submit" class="submit-login" value="iniciar sesión">
+                </form>
+            </div>
 
 
         <!-- Por qué estudiar con nosotros? -->
@@ -158,11 +158,9 @@
         </div>
     </footer>
 
-
-
+</body>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/display.js"></script>
-    
-</body>
+    <script src="js/fondo.js"></script>
 </html>
