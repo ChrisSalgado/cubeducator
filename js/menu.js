@@ -1,5 +1,21 @@
-var btnMenu = document.getElementById('btn-menu');
-var nav = document.getElementById('nav');
-btnMenu.addEventListener('click', function(){
-  nav.classList.toggle('mostrar');
-});
+$(document).ready(main);
+
+var contador = 1;
+
+function main(){
+    $('.bt-menu').click(function(){
+        
+        if(contador == 1){
+            $('.MainMenu').animate({
+               left: '0' 
+            });
+            contador = 0;
+        } else {
+            contador =1
+            $('.MainMenu').animate({
+               left: '-100%' 
+            });
+        }     
+        
+    });
+};

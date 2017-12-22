@@ -10,26 +10,27 @@
     <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
-   <header class="header">
-      <div class="contenedor">
-        <h1 class="logo"><img src="img/Logo%202.png" style="width: 250px" alt=""></h1>
-        <span class="icon-menu" id="btn-menu"> <i class="fa fa-bars" aria-hidden="true"></i></span>
-
-        <nav class="nav" id="nav">
-          <ul class="menu">
-            <li class="menu__item"><a href="index.html" class="menu__link select">Inicio</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Cursos</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Precios</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Nosotros</a></li>
-
-
-            <li class="menu__item"><a href="site/contacto.html" class="menu__link">Contacto</a></li>
-            <li class="menu__item"><a id="register" href="#" class="menu__link">Únete</a></li>
-            
-          </ul>
-        </nav>
-      </div>
-    </header>
+  
+   <header>
+       <div class="cont">
+           <div class="bt-menu">
+               <span class="fa fa-bars"></span>
+           </div>
+       </div>
+       <div class="MainMenu">
+           <div id="logo">
+               <img src="img/Logo.png">
+           </div>
+           <ul class="list">
+               <a href="index.html"><li>Inicio<div class="line"></div></li></a>
+               <li>Cursos<div class="line"></div></li>
+               <li>Precios<div class="line"></div></li>
+               <li>Nosotros<div class="line"></div></li>
+               <a href="site/contacto.html"><li>Contacto<div class="line"></div></li></a>
+           </ul>
+       </div>   
+   </header>
+   
     <div id="register_display">
       <div id="register_form">
         <button>Text generic</button>
@@ -155,7 +156,8 @@
 
 
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/display.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/display.js"></script>
+    
 </body>
 </html>
