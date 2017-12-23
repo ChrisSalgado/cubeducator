@@ -15,7 +15,17 @@ function main(){
             $('.MainMenu').animate({
                left: '-100%' 
             });
-        }     
+        } 
+    });
+    
+    $('.close').click(function(){
+       
+        if(contador == 0){
+           $('.MainMenu').animate({
+               left: '-100%' 
+            });
+            contador = 1;
+        }
         
     });
 };

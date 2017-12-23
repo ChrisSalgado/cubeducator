@@ -14,6 +14,7 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   min-width: 400px;
+  min-height: 600px;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -105,14 +106,33 @@ ul li:hover .line{
     width: 180px;
 }
 
+.close{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 140px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 22px;
+    color: #fff;
+}
+
+.close:hover{
+    font-size: 25px;
+}
+
 #logo{
     position: absolute;
     font-size: 10px;
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
     left: 50%;
     transform: translate(-50%);
-    top: 20px
+    top: 40px
 }
 
 .social{
@@ -332,14 +352,14 @@ footer .footer .redes a{
 
     /*-----------------------------Aqui esta el wallpaper------- */
     
-    .banner{
-        margin-top: -60px;
-        position: relative;
-        z-index: -1000;
-        margin-bottom: 1px;
-        display: flex;
-        flex-direction: row;
-    }
+.banner{
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+    margin-bottom: 1px;
+    display: flex;
+    flex-direction: row;
+}
     
 .login{
     width: 30%;
